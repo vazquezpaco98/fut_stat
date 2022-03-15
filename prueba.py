@@ -1,6 +1,14 @@
 import os
-with open("BET.txt") as file:
-    lines = file.readlines()
+with open("goles_BET_local.txt") as file:
+    lines = [line.rstrip('\n') for line in file]
+
+suma = 0
 
 for line in lines:
-    print(line + 1)
+    line = int(line)
+    suma += line
+
+media = (float(suma) / float(len(lines)))
+
+
+print(media)
