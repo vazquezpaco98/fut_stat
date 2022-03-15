@@ -7,3 +7,9 @@ Necesito cuántos procesos. Vamos a contar.
 3. Otro provisional que coja la parte de red de las casas de apuestas.
 
 [enlace a escribir/leet python](https://realpython.com/read-write-files-python/)
+
+
+- 15 de Marzo
+
+Ya van la media de goles de local del betis pero el método es hiper cutre. piensa bien como sacar los goles de visitante y local de cada equipo y no depender de los bash si no directamente
+de la API con el puto json que no va.
