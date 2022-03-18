@@ -17,18 +17,20 @@ for line in lines:
         if (len(pareja[0]) < 4 and len(pareja[0]) > 2):
             parejas.append(line.split(':', 3))
 
+codes = []
+palabras = []
+claves = []
 for pareja in parejas:
-     print(pareja[0])
+    codes.append(pareja[0])
+    palabras = pareja[1].split(' ', 3)
+    palabra = ''
+    i = 0
+    while( len(palabra) < 5 and i < len(palabras)):
+         palabra = palabras[i]
+         i = i + 1
+    
+    claves.append(palabra)
 
-#CALCULAR MEDIA DE GOLES A PARTIR DE UN ARCHIVO
-for code in equipos_code:
-    with open("goles_"+code+"local.txt") as file:
-        lines = [line.rstrip('\n') for line in file]
-    suma = 0
+print(claves)
 
-    for line in lines:
-        line = int(line)
-        suma += line
-
-    media = (float(suma) / float(len(lines)))
-    print(media)
+# Ahora si tengo los codigos y las palabras clave
